@@ -1,33 +1,17 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      title: Sample App
+      home_item1: This is the home page for the
+      home_item2: sample application
+      home_item3: Ruby on Rails Tutorial
+    help:
+      title: Help
+      help_item1: Get help on the Ruby on Rails Tutorial at the
+      help_item2: Rails Tutorial Help page
+      help_item3: To get help on this sample app, see the
+      help_item4: Ruby on Rails Tutorial book.
+    about:
+      title: About
+      about_i1: The Ruby on Rails Tutorial, part of the Learn Enough family of tutorials, is a book and screencast series to teach web development with Ruby on Rails. This is the sample app for the tutorial.   
+  base_title: Ruby on Rails Tutorial Sample App
