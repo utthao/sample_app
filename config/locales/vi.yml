@@ -1,0 +1,17 @@
+vi:
+  static_pages:
+    home:
+      title: Ứng Dụng Tham Khảo
+      home_item1: Đây là trang chủ để  
+      home_item2: một ứng dụng mẫu
+      home_item3: hướng dẫn làm 
+    help:
+      title: Trợ giúp
+      help_item1: Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
+      help_item2: Trang chủ của Rails
+      help_item3: Để nhận trợ giúp về ứng dụng mẫu này, hãy xem
+      help_item4: Cuốn sách về Rails
+    about:
+      title: Giới thiệu
+      about_i1: Hướng dẫn về Ruby on Rails một phần của nhóm hướng dẫn Learn Enough một bộ sách và screencast để dạy phát triển web với Ruby on Rails.Đây là ứng dụng mẫu cho hướng dẫn.
+  base_title: Ứng dụng mẫu Ruby on Rails
