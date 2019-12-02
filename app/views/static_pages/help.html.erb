@@ -1,10 +1,11 @@
 <% provide:title, t(".title") %>
 <h2>
-  <%= link_to t("english"), locale: Setting.en %>
-  <%= link_to t("vietnamese"), locale: Setting.vi %>
+  <%= link_to t("english"), locale: Settings.en %>
+  <%= link_to t("vietnamese"), locale: Settings.vi %>
 </h2>
-<h1><%= t ".title" %> </h1>
-<p><%= t (".help_item1") %>
-  <%= link_to "https://www.railstutorial.org/help" %> <%= t ".help_item2" %> <%= t ".help_item3" %>
-  <%= link_to "https://www.railstutorial.org/book" %><em><%= t ".help_item4" %></em>book.
+<h1> <%= t ".title" %> </h1>
+<p>
+  <%= t(".help_item1")%>
+  <%= link_to t(".help_item3"), Settings.linkhelp1 %> <%= t(".help_item2") %>
+  <%= link_to t(".help_item4"), Settings.linkhelp2 %> 
 </p>
