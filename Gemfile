@@ -11,6 +11,9 @@ gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.3"
 gem "bcrypt", '3.1.12'
 gem "bootstrap-sass", '3.3.7'
+gem "faker", '1.7.3'
+gem "will_paginate", '3.1.7'
+gem "bootstrap-will_paginate"
 gem "sass-rails", "~> 5.0"
 gem "sqlite3"
 gem "turbolinks", "~> 5"
