@@ -9,9 +9,12 @@ gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.3"
+gem "rails-i18n"
 gem "bcrypt", '3.1.12'
 gem "bootstrap-sass", '3.3.7'
 gem "faker", '1.7.3'
+gem 'carrierwave', '1.2.2'
+gem 'mini_magick', '4.7.0'
 gem "will_paginate", '3.1.7'
 gem "bootstrap-will_paginate"
 gem "sass-rails", "~> 5.0"
@@ -39,7 +42,13 @@ group :test do
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 group :development, :test do
   gem "rubocop", "~> 0.74.0", require: false
   gem "rubocop-rails", "~> 2.3.2", require: false
+end
+
+group :production do
+  gem 'pg',  '0.20.0'
+  gem 'fog', '1.42'
 end
