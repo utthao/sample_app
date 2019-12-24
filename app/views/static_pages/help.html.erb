@@ -1,11 +1,9 @@
-<% provide:title, t(".title") %>
-<h2>
-  <%= link_to t("english"), locale: Settings.en %>
-  <%= link_to t("vietnamese"), locale: Settings.vi %>
-</h2>
+<% provide :title, t("help") %>
 <h1> <%= t ".title" %> </h1>
-<p>
-  <%= t(".help_item1")%>
-  <%= link_to t(".help_item3"), Settings.linkhelp1 %> <%= t(".help_item2") %>
-  <%= link_to t(".help_item4"), Settings.linkhelp2 %> 
+<p> <%= t ".help_item1" %>
+  <%= link_to Settings.link_help1 %>
+  <%= t ".help_item3" %>
+  <%= t ".help_item2" %>
+  <%= link_to Settings.link_help2 %>
+  <em> <%= t ".help_item4" %> </em>
 </p>

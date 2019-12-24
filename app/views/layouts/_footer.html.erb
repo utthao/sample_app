@@ -1,14 +1,14 @@
 <footer class="footer">
-<small>
-  <%= link_to Settings.linkhome %>
-  The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
-</small>
-<nav>
-<ul>
-  <li><%= link_to t("about"),   about_path %></li>
-  <li><%= link_to t("contact"), contact_path %></li>
-  <li><%= link_to t("news"), Settings.link_new %> </li>
-</ul>
-</nav>
+  <small>
+    <%= link_to t(".foo_i2"), Settings.link_home %>
+    <%= t ".foo_i3" %>
+    <%= link_to t(".foo_i4"), Settings.link_footer %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("about"), about_path %></li>
+      <li><%= link_to t("contact"), contact_path %></li>
+      <li><%= link_to t("news"), Settings.link_new %> </li>
+    </ul>
+  </nav>
 </footer>

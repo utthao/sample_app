@@ -2,16 +2,40 @@ vi:
   static_pages:
     home:
       title: Ứng Dụng Tham Khảo
-      home_item1: Đây là trang chủ để  
+      home_i1: Chào mừng đến với ứng dụng mẫu Ruby
+      home_item1: Đây là trang chủ để
       home_item2: một ứng dụng mẫu
-      home_item3: hướng dẫn làm 
+      home_item3: hướng dẫn sử dụng Rails
     help:
       title: Trợ giúp
       help_item1: Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
-      help_item2: Trang chủ của Rails
-      help_item3: Để nhận trợ giúp về ứng dụng mẫu này, hãy xem
-      help_item4: Cuốn sách về Rails
+      help_item2: Để nhận trợ giúp về ứng dụng mẫu này, hãy xem
+      help_item3: Trang thông tin trợ giúp của Rails.
+      help_item4: Sách hướng dẫn Ruby on Rails
     about:
       title: Giới thiệu
-      about_i1: Hướng dẫn về Ruby on Rails một phần của nhóm hướng dẫn Learn Enough một bộ sách và screencast để dạy phát triển web với Ruby on Rails.Đây là ứng dụng mẫu cho hướng dẫn.
-  base_title: Ứng dụng mẫu Ruby on Rails
+      about_i1: Đây
+      about_i2: Hướng dẫn Ruby on Rails
+      about_i3: là một
+      about_i4: loạt ảnh và video
+      about_i5: để dạy phát triển web với
+      about_i6: Đây là ứng dụng mẫu cho hướng dẫn.
+    contact:
+      title: Liên hệ
+      contact_i1: Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại
+      contact_i2: trang liên hệ
+  layouts:
+    application:
+      base_title: Ứng dụng mẫu
+    footer:
+      foo_i1: Tin tức
+      foo_i2: Hướng dẫn Ruby on Rails
+      foo_i3: bởi
+      foo_i4: Michael Hartl
+  home : Trang chủ
+  help: Trợ giúp
+  about: Khác
+  contact: Liên Hệ
+  login: Đăng nhập
+  button_signup: Đăng ký!
+  news: Tin tức
