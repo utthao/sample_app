@@ -1,8 +1,12 @@
-<h2>
-  <%= link_to t("english"), locale: "en" %>
-  <%= link_to t("vietnamese"), locale: "vi" %>
-</h2>
-<h1><%= t ".title" %> </h1>
+<% provide :title, t(".title") %>
+<h1> <%= t ".title" %> </h1>
 <p>
-<%= t ".about_i1" %>
+  <%= t ".about_i1" %>
+  <%= link_to Settings.link_home %>
+  <em> <%= t ".about_i2" %> </em>
+  <%= t ".about_i3" %>
+  <%= link_to Settings.link_about %>
+  <%= t ".about_i4" %>
+  <%= t ".about_i5" %>
+  <%= link_to Settings.link_about2 %> Ruby on Rails
 </p>

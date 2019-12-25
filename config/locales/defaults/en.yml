@@ -1,0 +1,25 @@
+en:
+  base_title: Sample App
+  layouts:
+    header:
+      home: Home
+      help: Help
+      login: Login
+      sampleapp: Sample App
+      users: Users
+      setting: Setting
+      logout: Log out
+      profile: Profile
+      account: Accout
+      english: English
+      vietnamese: Vietnamese
+    footer:
+      foo_i: News
+      foo_i1: The
+      foo_i2: Ruby on Rails Tutorial
+      foo_i3: by
+      foo_i4: Michael Hartl
+      contact: Contact
+      about: About
+  hello: Hello world
+  button_signup: Sign up now!

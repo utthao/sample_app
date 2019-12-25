@@ -1,0 +1,25 @@
+vi:
+  base_title: Ứng dụng mẫu
+  layouts:
+    header:
+      home: Trang chủ
+      help: Trợ giúp
+      login: Đăng nhập
+      sampleapp: Sample App
+      users: Người dùng
+      setting: Cài đặt
+      logout: Đăng xuất
+      profile: Hồ sơ
+      account: Tài khoản
+      english: Tiếng Anh
+      vietnamese: Tiếng Việt
+    footer:
+      foo_i: Tin tức
+      foo_i1: Đây là
+      foo_i2: Hướng dẫn Ruby on Rails
+      foo_i3: bởi
+      foo_i4: Michael Hartl
+      contact: Liên hệ
+      about: Chi tiết
+  hello: "Xin chào"
+  button_signup: Đăng ký!

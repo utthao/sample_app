@@ -1,0 +1,14 @@
+vi:
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      signup: "Đăng ký ngay"
+      remember: "Lưu tài khoản?"
+      newuser: "Chưa có tài khoản?"
+  user_mailer:
+    account_activation:
+      activation: "Kích hoạt tài khoản"
+      welcome: "Click link bên dưới để kích hoạt tài khoản:"
+      hi: "Xin chào"

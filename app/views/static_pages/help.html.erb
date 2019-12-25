@@ -1,9 +1,9 @@
-<h2>
-  <%= link_to t("english"), locale: "en" %>
-  <%= link_to t("vietnamese"), locale: "vi" %>
-</h2>
-<h1><%= t ".title" %> </h1>
-<p><%= t(".help_item1")%>
-<%= link_to "https://www.railstutorial.org/help" %> Rails Tutorial Help page <%= t(".help_item2")%>
-<%= link_to"https://www.railstutorial.org/book" %> <em>Ruby on Rails Tutorial</em> book
+<% provide :title, t(".title") %>
+<h1> <%= t ".title" %> </h1>
+<p> <%= t ".help_item1" %>
+  <%= link_to Settings.link_help1 %>
+  <%= t ".help_item3" %>
+  <%= t ".help_item2" %>
+  <%= link_to Settings.link_help2 %>
+  <em> <%= t ".help_item4" %> </em>
 </p>

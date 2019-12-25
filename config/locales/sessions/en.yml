@@ -1,0 +1,14 @@
+en:
+  sessions:
+    new:
+      login: "Login"
+      signup: "Sign up now"
+      email: "Email"
+      password: "Password"
+      remember: "Remember me?"
+      newuser: "New user?"
+  user_mailer:
+    account_activation:
+      activation: "Activation"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      hi: "Hi"

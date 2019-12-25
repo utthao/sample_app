@@ -18,12 +18,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-      if @user.save
-          @user.send_activation_email
-            UserMailer.account_activation(@user).deliver_now
-            flash[:info] = "Please check your email to activate your account."
-            redirect_to root_url
-      else
+    if @user.save
+      @user.send_activation_email
+      UserMailer.account_activation(@user).deliver_now
+      flash[:info] = "Please check your email to activate your account."
+      redirect_to root_url
+    else
       render "new"
     end
   end
@@ -34,7 +34,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    if @user.update_attributes(user_params)
+    if @user.update(user_params)
       flash[:success] = "Profile updated"
       redirect_to @user
     else
@@ -48,11 +48,25 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = "Following"
+    @user  = User.find(params[:id])
+    @users = @user.following.paginate(page: params[:page])
+    render "show_follow"
+  end
+
+  def followers
+    @title = "Followers"
+    @user  = User.find(params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render "show_follow"
+  end
+
   private
 
   def user_params
-      params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+    params.require(:user).permit(:name, :email, :password,
+                                 :password_confirmation)
   end
 
   def logged_in_user
@@ -69,8 +83,8 @@ class UsersController < ApplicationController
   end
 
   def admin_user
-      redirect_to(root_url) unless current_user.admin?
-    end
+    redirect_to(root_url) unless current_user.admin?
+  end
 
   def create_activation_digest
     # Create the token and digest.

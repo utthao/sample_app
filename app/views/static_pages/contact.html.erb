@@ -1,5 +1,7 @@
-<h1>Contact</h1>
+<% provide :title, t(".title") %>
+<h1> <%= t ".title" %> </h1>
 <p>
-  Contact the Ruby on Rails Tutorial about the sample app at the
-  <%= link_to "https://www.railstutorial.org/contact"%>contact page.
+  <%= t ".contact_i1" %>
+  <%= link_to Settings.link_contact %>
+  <%= t ".contact_i2" %>
 </p>
